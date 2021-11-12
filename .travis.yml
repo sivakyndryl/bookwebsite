@@ -1,0 +1,13 @@
+language: bash
+install: bash install.sh
+script: bash script.sh
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+   branch: main
+env:
+  global:
+    secure: luQlsGkpBR9BHXa2tVq0QZFMraL8n/bfFNhqmf1xvjkH58UnUf50xfmO5k9gYnHIiIuu4oD67R35vS0w+o6H2j5kG4n86YrXWzfTD41aLJD5vIYNmYCHkJd35bEoxP2F/3g65Gz/RLlDb4cYgxF40fpOsaU5+tUPP/wgT6wfCQvr27QwH1bw45SLpHqbSMMoggyypAsaj/QPoGKi2cc1zDHXAxfG3PUoc+JnrXNqMJPawRh7g3o5ZPAQcQgLWcKuGuvcDl3hCVSjhoqqdGZOPLSmvHBPSiDCjPlLLIAMjoR4BgME9jz2WxgWkw54YGCIK4zmQkzJCqtQ1eaiXNgLQyGms/1yIbgZ35fvgCGLGaMbvqUyX71xJP9C8/6UizmOyBrnmLqiqGETV00jWotnsGYbAv6xVfLRISSMrFNnDEB7IsHblJcFTRn8omRx88u0sB2NWn3i16Z3jv63mPmNaIiKy2lnScqWpRg8O0e0V0NpTFj1+OaFauYBGGYD5tJJRNGkP80C/y+3aSr91JJyD+OdwAOcsEPVIrlVapCT/cFxpxAu9u3VA2yZjlZziMNWeB6pLGNUUmvuLhDQ8WPV/UfMP4HBcs1F1r4Ggba9JxLZ06TfFtGLRQao8cA556Is3Xr5AGhwRsKnK/NvNuOpFJLzOnuVrRprFauNCtZijVY=
